@@ -22,7 +22,7 @@ func FetchProfile(username string, log *log.Logger) (*Profile, error) {
 		return nil, err
 	}
 
-	items, err := fetchCollection(fanID, log)
+	items, err := fetchCollection(fanID, httpClient, log)
 	if err != nil {
 		return nil, fmt.Errorf("fetching collection: %w", err)
 	}

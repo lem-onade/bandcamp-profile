@@ -15,4 +15,5 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(profileCmd)
+	rootCmd.AddCommand(downloadCmd)
 }

@@ -4,6 +4,10 @@ Fetch a Bandcamp fan profile and their collection from the command line.
 
 ## Install
 
+Download from releases tab.
+
+Go install:
+
 ```bash
 go install github.com/lem-onade/bandcamp-profile@latest
 ```
@@ -41,10 +45,3 @@ bp profile lmnd | jq -r '.items[].url' | xargs -n1 bandcamp-dl --base-dir=out/
 |------|-------|---------|-------------|
 | `--format` | `-F` | `json` | `json` or `readable` |
 | `--output` | `-o` | stdout | Write output to a file |
-
-## Build Locally
-
-```bash
-make build
-./bp --help
-```
