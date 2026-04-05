@@ -3,9 +3,10 @@ package cmd
 import "github.com/spf13/cobra"
 
 var rootCmd = &cobra.Command{
-	Use:          "bp",
-	Short:        "Bandcamp profile CLI",
-	SilenceUsage: true,
+	Use:                "bp",
+	Short:              "Bandcamp profile CLI",
+	SilenceUsage:       true,
+	CompletionOptions:  cobra.CompletionOptions{DisableDefaultCmd: true},
 }
 
 func Execute() error {
