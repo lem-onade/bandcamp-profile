@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/lem-onade/bandcamp-profile/internal/bandcamp"
+	"github.com/lem-onade/bandcamp-profile/bandcamp"
 	"github.com/spf13/cobra"
 )
 

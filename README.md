@@ -32,7 +32,7 @@ bp profile lmnd
 bp profile lmnd -F json --output output.json
 
 # Pipe into jq and download all albums with bandcamp-dl
-bp profile lmnd | jq -r '.items[].url' | xargs -n1 bandcamp-dl --base-dir=bandcamp/
+bp profile lmnd | jq -r '.items[].url' | xargs -n1 bandcamp-dl --base-dir=out/
 ```
 
 ## Flags
