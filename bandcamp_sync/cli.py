@@ -123,7 +123,7 @@ def main(argv: list[str] | None = None) -> int:
         try:
             fan_id = client.fan_id()
         except AuthError as e:
-            _err(f"{e}; the cookie in {path} ({source}) may be expired. {COOKIE_HELP}")
+            _err(f"{e}; the cookie in {path} ({source}) may be expired; {COOKIE_HELP}")
             return 2
         purchases = client.purchases(fan_id)
         counts = sync(client, purchases, options, out=_say)
