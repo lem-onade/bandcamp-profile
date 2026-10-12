@@ -1,0 +1,25 @@
+{
+  "templglobals": {"endpoint_mobilized": true},
+  "download_type": "a",
+  "is_gift": false,
+  "fan_logged_in": true,
+  "digital_items": [
+    {
+      "art_id": 1234567890,
+      "artist": "",
+      "title": "",
+      "type": "album",
+      "item_id": 0,
+      "item_type": "a",
+      "download_type": "a",
+      "download_type_str": "album",
+      "downloads": {},
+      "freebie_download": false,
+      "is_set_price": false,
+      "thumb_url": "https://f4.bcbits.com/img/a1234567890_3.jpg",
+      "url": "https://example.bandcamp.com/album/example"
+    }
+  ],
+  "download_items": null,
+  "has_email": true
+}
